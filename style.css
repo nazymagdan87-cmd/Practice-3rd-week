@@ -1,0 +1,25 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+ 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+ 
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+}
+ 
+.card__title { margin: 0 0 4px; }
+.card__original { color: #777; font-style: italic; margin: 0 0 8px; }
+.card__status { font-weight: bold; }
+ 
+.message { padding: 16px; color: #555; }
+.message--error { color: #a33; }
